@@ -1,0 +1,71 @@
+.SlideShow{
+    position:relative;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.Photos{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+
+}
+
+.Photos-wrapper{
+
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+
+}
+.Photos-wrapper::-webkit-scrollbar{
+    display: none;
+
+
+
+}
+.Arrow{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    width: 40px;
+    border: none;
+    line-height: 250px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: 1s;
+}
+
+.Arrow.R{
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%)
+
+}
+
+.Arrow:hover{
+
+
+    opacity: 1;
+
+}
+
+.item{
+    opacity: 0.4;
+    transition: 1s;
+
+
+}
+
+.current-item{
+    opacity: 1;
+
+
+
+}
